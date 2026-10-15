@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Python과 FastAPI로 데이터 서비스를 만드는 주니어 개발자 푸바오의 포트폴리오">
+  <meta name="description" content="Python과 FastAPI로 데이터 서비스를 만드는 신입 개발자 노가희의 포트폴리오">
   <title>노가희 | 백엔드 개발자 포트폴리오</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23202020'/%3E%3Cpath d='M20 45V19h25v7H28v4h14v7H28v8z' fill='%23ff682c'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +28,9 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">AI Backend · Python / FastAPI</p>
+        <p class="eyebrow">Data Backend · Python / FastAPI</p>
         <h1 id="hero-title"><span class="hero-line plain">데이터를 정리하고,</span><br><span class="hero-line">API로 연결합니다.</span></h1>
-        <p class="hero-summary">Python으로 데이터를 정리하고 FastAPI로 API를 만드는 공부를 하고 있습니다. 팀 프로젝트에서는 전처리와 백엔드 구현을 주로 맡았습니다.</p>
+        <p class="hero-summary">Python으로 데이터를 정리하고 FastAPI와 PostgreSQL로 API를 만들고 있습니다. 팀 프로젝트에서는 백엔드 구현과 모델 검증을 주로 맡았습니다.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">대표 프로젝트 보기</a>
           <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">이력서 보기</a>
@@ -40,20 +40,22 @@
       <aside class="snapshot" aria-label="핵심 역량 요약">
         <p class="snapshot-label">프로필 요약</p>
         <dl>
-          <div><dt>관심 직무</dt><dd>AI 백엔드</dd></div>
-          <div><dt>주요 기술</dt><dd>Python · FastAPI</dd></div>
-          <div><dt>대표 경험</dt><dd>팀 프로젝트 4회</dd></div>
-          <div><dt>강점</dt><dd>실험과 개선</dd></div>
+          <div><dt>관심 직무</dt><dd>백엔드 개발</dd></div>
+          <div><dt>주요 기술</dt><dd>Python · FastAPI · PostgreSQL</dd></div>
+          <div><dt>대표 경험</dt><dd>팀 프로젝트 3건</dd></div>
+          <div><dt>강점</dt><dd>원인 추적 · 데이터 처리</dd></div>
+          <div><dt>자격</dt><dd>정보처리기사 보유 · 빅데이터분석기사 준비 중</dd></div>
+          <div><dt>교육</dt><dd>빅데이터 분석 플랫폼 개발자 양성과정 · 전자공학 전공</dd></div>
         </dl>
-        <div class="availability"><span aria-hidden="true"></span> 2027년 2월 졸업 예정</div>
+        
       </aside>
     </section>
 
     <section class="metrics" aria-label="포트폴리오 주요 수치">
-      <article><strong>3</strong><span>대표 프로젝트</span></article>
-      <article><strong>12</strong><span>자동화 테스트</span></article>
-      <article><strong>35%</strong><span>응답 시간 개선</span></article>
-      <article><strong>84%</strong><span>최고 예측 정확도</span></article>
+      <article><strong>0.352</strong><span>상품별 랜덤포레스트 WAPE (4주 평균 0.411, 마지막 8주 기준)</span></article>
+      <article><strong>85.2%</strong><span>화재 인명피해 재현율 (정밀도 7.5%와 맞바꾼 결과)</span></article>
+      <article><strong>19만 건</strong><span>분석한 소방청 화재 발생 정보</span></article>
+      <article><strong>3건</strong><span>함께 만든 팀 프로젝트</span></article>
     </section>
 
     <section class="section projects" id="projects" aria-labelledby="projects-title">
@@ -62,26 +64,35 @@
           <p class="eyebrow">PROJECTS</p>
           <h2 id="projects-title">대표 프로젝트</h2>
         </div>
-        <p>수업과 팀 프로젝트에서 제가 직접 맡은 작업을 정리했습니다.</p>
+        <p>팀 프로젝트에서 제가 직접 맡은 작업을 정리했습니다.</p>
       </div>
 
       <article class="project-card featured">
         <figure class="project-visual shot wide">
-          <img src="images/project-1.png" alt="지하철 혼잡도 예측 대시보드 화면: 시간대별 혼잡도 막대그래프와 예측값 84%" width="640" height="400" loading="lazy">
+          <img src="images/project-1.png" alt="주간 수요예측 모델 비교 차트: 마지막 8·12·16주 구간 모두에서 상품별 랜덤포레스트의 오차(WAPE)가 0.339~0.374로 가장 낮음" width="640" height="400" loading="lazy">
         </figure>
         <div class="project-copy">
-          <div class="project-number">01 · AI SERVICE</div>
-          <h3>지하철 혼잡도 예측 서비스</h3>
-          <p class="project-lead">시간대와 날씨 데이터를 이용해 역별 혼잡도를 예측하고, 결과를 API와 대시보드로 제공했습니다.</p>
+          <div class="project-number">01 · BACKEND + ML</div>
+          <h3><a href="https://github.com/ghee01/b2b-inventory-api" target="_blank" rel="noopener">B2B 재고·매출·거래처 관리 API ↗</a></h3>
+          <p class="project-lead">기업의 상품·거래처·주문·재고를 관리하는 FastAPI 기반 B2B API로, 주문 CSV 일괄 적재, 상품별 주간 수요예측, 그리고 그 예측을 활용한 추천 발주량·예상 품절일 계산 기능을 갖춘 팀 프로젝트입니다.</p>
           <ul class="impact-list">
-            <li><strong>문제</strong><span>결측치와 노선별 데이터 편차로 모델 성능 저하</span></li>
-            <li><strong>기여</strong><span>전처리 파이프라인, 예측 모델, FastAPI 구현</span></li>
-            <li><strong>결과</strong><span>정확도 72% → 84%, API 응답 35% 개선</span></li>
+            <li><strong>문제</strong><span>과거 거래 데이터를 한 번에 적재할 방법이 없었고, 주문이 드문 상품은 예측 오차가 판매량 수준으로 커짐</span></li>
+            <li><strong>기여</strong><span>CSV 일괄 적재(행 검증·트랜잭션), 더미 주문 생성기, 수요예측 API, 모델·기준값 검증 노트북</span></li>
+            <li><strong>결과</strong><span>상품별 랜덤포레스트가 3개 구간 모두 최저 오차(WAPE 0.339~0.374), 4주 평균 대비 1~14% 개선(구간이 길수록 격차는 줄어듦)</span></li>
           </ul>
-          <div class="tags" aria-label="사용 기술"><span>Python</span><span>FastAPI</span><span>Scikit-learn</span><span>Docker</span></div>
+          <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" onerror="this.remove()">Python</span><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span></div>
+          <div class="project-links"><a class="repo-link" href="https://github.com/ghee01/b2b-inventory-api" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/808080" alt="" width="14" height="14" onerror="this.remove()">GitHub 레포 보기 →</a></div>
           <details>
             <summary>해결 과정 자세히 보기</summary>
-            <p>전체 평균으로 처리하던 결측치를 노선과 시간대별 중앙값으로 보정했습니다. 이후 전처리 코드를 함수로 분리하고 테스트를 추가해 학습과 API 예측에서 같은 변환이 적용되도록 만들었습니다.</p>
+            <p>
+              CSV 적재는 거래처·상품·주문을 한 트랜잭션으로 저장해 하나라도 실패하면 전부 롤백하고, 오류 시 몇 행의 어떤 값이 문제인지 알려줍니다. 
+              수요예측은 최근 52주 중 주문 없던 주가 10주를 넘으면 예측 대상에서 제외하는 규칙(기준 0.8)을 쓰고, 이 기준을 0.5~1.0으로 바꿔가며 점검했습니다. 
+              0.8에서는 주문이 드문 P-006·P-005가 빠져 10개 상품이 남습니다. 
+              0.85로 올리면 P-007까지 빠져 평균 WAPE가 0.451에서 0.381로 낮아지지만, P-007은 전체 판매량의 약 0.2%라 실제 예측 품질에는 거의 영향이 없었습니다. 
+              데이터마다 기준을 바꾸면 튜닝이 되므로 0.8로 고정하고, 노트북은 점검용으로만 사용했습니다. 
+              제외된 상품은 사유와 함께 응답합니다. 
+              다만 상품 12개의 더미 데이터로 확인한 기준이라 실제 데이터에서는 달라질 수 있다는 한계도 README에 적어 두었습니다.
+            </p>
           </details>
         </div>
       </article>
@@ -89,27 +100,38 @@
       <div class="project-grid">
         <article class="project-card compact">
           <figure class="project-visual shot std">
-          <img src="images/project-2.png" alt="학습 패턴 분석 서비스 화면: 학습 달성도 링 그래프 78" width="640" height="360" loading="lazy">
+          <img src="images/project-2.png" alt="화재 인명피해 예측 결과: 혼동행렬과 변수 그룹별 중요도 차트. 발화요인 38%, 장소 20%" width="640" height="360" loading="lazy">
         </figure>
         <div class="project-copy">
-            <div class="project-number">02 · DATA PRODUCT</div>
-            <h3>학습 패턴 분석 서비스</h3>
-            <p>학습 기록을 분석해 취약 단원과 다음 학습 행동을 제안하는 대시보드입니다.</p>
-            <p class="one-line-impact"><strong>내 기여</strong> 데이터 모델링 · 추천 규칙 · 시각화</p>
-            <div class="tags"><span>Pandas</span><span>Streamlit</span><span>SQLite</span></div>
+            <div class="project-number">02 · DATA / ML</div>
+            <h3><a href="https://github.com/ghee01/fire-casualty-prediction" target="_blank" rel="noopener">화재 인명피해 예측 ↗</a></h3>
+            <p class="project-lead">소방청 화재 발생 정보 약 19만 건으로 인명피해 발생 여부를 예측한 3인 팀 프로젝트입니다.</p>
+            <ul class="kpis" aria-label="핵심 지표"><li><b>85.2%</b>Recall</li><li><b>0.77</b>ROC-AUC</li><li><b>7.5%</b>Precision</li></ul>
+            <ul class="impact-list">
+              <li><strong>문제</strong><span>인명피해 사례가 전체의 약 4.4%뿐인 불균형 데이터</span></li>
+              <li><strong>기여</strong><span>전처리·모델 파이프라인, 클래스 가중치와 임계값 0.3으로 불균형 대응, 변수 중요도 분석</span></li>
+              <li><strong>결과</strong><span>놓치는 사례를 줄이는 쪽을 우선해 Recall 85.2% 확보, 대가로 Precision은 7.5%로 낮아지는 트레이드오프를 해석. 발화요인(약 38%)과 장소(약 20%)가 가장 큰 변수 그룹</span></li>
+            </ul>
+            <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span><img src="https://cdn.simpleicons.org/pandas" alt="" width="16" height="16" onerror="this.remove()">Pandas</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span><span><img src="https://cdn.simpleicons.org/jupyter" alt="" width="16" height="16" onerror="this.remove()">Jupyter</span></div>
+            <div class="project-links"><a class="repo-link" href="https://github.com/ghee01/fire-casualty-prediction" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/808080" alt="" width="14" height="14" onerror="this.remove()">GitHub 레포 보기 →</a></div>
           </div>
         </article>
 
         <article class="project-card compact">
           <figure class="project-visual shot std">
-          <img src="images/project-3.png" alt="리뷰 감성 분류 API 응답 화면: POST /predict 200 OK" width="640" height="360" loading="lazy">
+          <img src="images/project-3.png" alt="냉장고 식재료 관리 API 구조도: Streamlit, FastAPI, PostgreSQL 연결과 엔드포인트 목록" width="640" height="360" loading="lazy">
         </figure>
         <div class="project-copy">
-            <div class="project-number">03 · NLP API</div>
-            <h3>리뷰 감성 분류 API</h3>
-            <p>한국어 리뷰의 감성을 분류하고 요청 기록을 모니터링하는 REST API입니다.</p>
-            <p class="one-line-impact"><strong>내 기여</strong> 모델 서빙 · 예외 처리 · API 테스트</p>
-            <div class="tags"><span>PyTorch</span><span>FastAPI</span><span>Pytest</span></div>
+            <div class="project-number">03 · BACKEND</div>
+            <h3><a href="https://github.com/ghee01/fridge-project" target="_blank" rel="noopener">냉장고 식재료 관리 API ↗</a></h3>
+            <p class="project-lead">식재료 등록·검색·수정·삭제와 CSV 대량 등록, 유통기한 현황 대시보드를 제공하는 3인 팀 프로젝트입니다.</p>
+            <ul class="impact-list">
+              <li><strong>문제</strong><span>CSV 대량 등록 때 일부 행이 오류 없이 건너뛰어지고, 날짜가 문자열(VARCHAR)로 저장됨</span></li>
+              <li><strong>기여</strong><span>Router 구조화, 요청/응답 스키마 분리, CRUD·검색·페이지네이션·예외 처리, PATCH 부분 수정 검증</span></li>
+              <li><strong>결과</strong><span>날짜를 DATE 타입으로 바꾸고 공통 parse_date()로 통일, 행 누락 버그는 원인까지 추적해 수정하고 TROUBLESHOOTING 문서로 정리</span></li>
+            </ul>
+            <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" width="16" height="16" onerror="this.remove()">SQLAlchemy</span><span><img src="https://cdn.simpleicons.org/pydantic" alt="" width="16" height="16" onerror="this.remove()">Pydantic</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span></div>
+            <div class="project-links"><a class="repo-link" href="https://github.com/ghee01/fridge-project" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/808080" alt="" width="14" height="14" onerror="this.remove()">GitHub 레포 보기 →</a></div>
           </div>
         </article>
       </div>
@@ -117,28 +139,28 @@
 
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="section-heading">
-        <div><p class="eyebrow">EXPERIENCE</p><h2 id="about-title">제가 맡았던 일</h2></div>
-        <p>기술 이름만 나열하지 않고 어디서 어떻게 사용했는지 적었습니다.</p>
+        <div><p class="eyebrow">SKILLS</p><h2 id="about-title">기술 스택</h2></div>
+        <p>수업과 프로젝트에서 직접 사용한 기술입니다. 어디서 썼는지도 함께 적었습니다.</p>
       </div>
-      <div class="capability-grid">
-        <article><span>01</span><h3>분석과 모델링</h3><p>Pandas로 탐색과 전처리를 수행하고, 검증 지표를 기준으로 모델을 비교합니다.</p><small>근거 프로젝트 · 지하철 혼잡도 예측</small></article>
-        <article><span>02</span><h3>API와 데이터베이스</h3><p>FastAPI로 REST API를 설계하고, SQL 데이터 모델과 예외 처리를 구현합니다.</p><small>근거 프로젝트 · 리뷰 감성 분류 API</small></article>
-        <article><span>03</span><h3>협업과 품질</h3><p>이슈와 PR 단위로 작업하고, README와 테스트를 통해 다른 사람이 재현할 수 있게 합니다.</p><small>근거 경험 · 4인 팀 프로젝트</small></article>
+      <div class="skill-groups">
+        <article class="skill-group"><h3>백엔드 · 데이터베이스</h3><div class="tags" aria-label="백엔드 · 데이터베이스 기술"><span><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" onerror="this.remove()">Python</span><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/pydantic" alt="" width="16" height="16" onerror="this.remove()">Pydantic</span><span><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" width="16" height="16" onerror="this.remove()">SQLAlchemy</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/sqlite" alt="" width="16" height="16" onerror="this.remove()">SQLite</span><span><img src="https://cdn.simpleicons.org/swagger" alt="" width="16" height="16" onerror="this.remove()">Swagger UI</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>REST API, ORM 모델, 입력 검증, 예외 처리, 모델 서빙</p><p><span class="label">근거 프로젝트</span>냉장고 식재료 API · B2B 재고 API · 대출 심사 API(수업)</p></div></article>
+        <article class="skill-group"><h3>데이터 분석 · 모델링</h3><div class="tags" aria-label="데이터 분석 · 모델링 기술"><span><img src="https://cdn.simpleicons.org/pandas" alt="" width="16" height="16" onerror="this.remove()">Pandas</span><span><img src="https://cdn.simpleicons.org/numpy" alt="" width="16" height="16" onerror="this.remove()">NumPy</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span>XGBoost</span><span><img src="https://cdn.simpleicons.org/jupyter" alt="" width="16" height="16" onerror="this.remove()">Jupyter</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>전처리, 불균형 대응, 백테스트 비교, 대시보드, 데이터 드리프트 점검</p><p><span class="label">근거 프로젝트</span>화재 인명피해 예측 · B2B 수요예측 · 대출 심사 API(수업)</p></div></article>
+        <article class="skill-group"><h3>테스트 · 배포 · 협업</h3><div class="tags" aria-label="테스트 · 배포 · 협업 기술"><span><img src="https://cdn.simpleicons.org/pytest" alt="" width="16" height="16" onerror="this.remove()">pytest</span><span><img src="https://cdn.simpleicons.org/ruff" alt="" width="16" height="16" onerror="this.remove()">Ruff</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span><span><img src="https://cdn.simpleicons.org/githubactions" alt="" width="16" height="16" onerror="this.remove()">GitHub Actions</span><span><img src="https://cdn.simpleicons.org/git" alt="" width="16" height="16" onerror="this.remove()">Git</span><span><img src="https://cdn.simpleicons.org/github/808080" alt="" width="16" height="16" onerror="this.remove()">GitHub</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>API 테스트, 코드 린트, Docker 이미지·헬스체크, push 때 자동 검사(CI)</p><p><span class="label">근거 프로젝트</span>대출 심사 API(수업) · B2B 재고 API · 냉장고 프로젝트</p></div></article>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow">CONTACT</p>
-      <h2 id="contact-title">AI 백엔드 개발자로<br>첫걸음을 준비하고 있습니다.</h2>
-      <p>현재 인턴십 또는 신입 기회를 찾고 있습니다. 궁금한 점이 있다면 편하게 연락해 주세요.</p>
+      <h2 id="contact-title">데이터 기반 백엔드 개발자로<br>첫걸음을 준비하고 있습니다.</h2>
+      <p>현재 신입 기회를 찾고 있습니다. 궁금한 점이 있다면 편하게 연락해 주세요.</p>
       <div class="contact-links">
-        <a href="mailto:fubao@example.com">fubao@example.com</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:shrkgml127@gmail.com">shrkgml127@gmail.com</a>
+        <a href="https://github.com/ghee01" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer><span>© 2026 Fubao</span><a href="#top">맨 위로</a></footer>
+  <footer><span>© 2026 노가희</span><a href="#top">맨 위로</a></footer>
   <!-- 캡처 이미지는 images 폴더의 파일을 같은 이름으로 바꿔 넣으면 됩니다. 파일명은 영문 소문자·숫자, 가로 1200px 이하, 500KB 이하를 권장합니다. -->
 </body>
 </html>
