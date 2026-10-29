@@ -261,3 +261,15 @@ a, .button, summary { transition: color .2s ease, background-color .2s ease, bor
 .deep-dive code { padding: 1px 6px; border-radius: 4px; background: var(--color-canvas-white); color: var(--color-graphite); font-family: Consolas, "SFMono-Regular", monospace; font-size: .88em; word-break: break-all; }
 /* 섹션 소제목: 단어 중간(예: "정리했/습니다.")에서 줄이 바뀌지 않게 */
 .section-heading > p { word-break: keep-all; }
+
+/* B2B 카드: 왼쪽 칸에 이미지 2장을 위아래로 */
+.visual-stack { display: flex; flex-direction: column; gap: 16px; align-self: start; min-width: 0; }
+.project-visual.shot.demo { aspect-ratio: 1572 / 852; }
+
+/* 냉장고 카드: 이미지 2장을 원본 비율 그대로 위아래로 (잘림 없음) */
+.compact .visual-stack { gap: 12px; }
+.project-visual.shot.list { aspect-ratio: 1525 / 810; }
+.project-visual.shot.csv { aspect-ratio: 1480 / 722; }
+
+/* 화재 카드: 어두운 대시보드 캡처는 좌우 여백이 넓어 정사각형으로 잘라 글자를 크게 (냉장고 카드 이미지 2장 높이와 맞춤) */
+.project-visual.shot.dash { aspect-ratio: 1 / 1; background: #0e1117; }
