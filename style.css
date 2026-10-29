@@ -239,3 +239,25 @@ a, .button, summary { transition: color .2s ease, background-color .2s ease, bor
 .skill-notes p:last-child { margin-bottom: 0; }
 .skill-notes .label { display: block; margin-bottom: 2px; color: var(--color-slate); font-size: 12px; }
 @media (max-width: 900px) { .skill-groups { grid-template-columns: 1fr; } }
+
+/* ===== 추가: '해결 과정 자세히 보기' 단계형 레이아웃 ===== */
+.deep-dive .steps { list-style: none; counter-reset: step; margin: 16px 0 0; padding: 0; }
+.deep-dive .steps li { counter-increment: step; position: relative; padding: 0 0 20px 40px; }
+.deep-dive .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--color-graphite); color: #fff; font-family: var(--font-heading); font-size: 13px; line-height: 1; }
+.deep-dive .steps li:not(:last-child)::after { content: ""; position: absolute; left: 12.5px; top: 32px; bottom: 6px; width: 1px; background: var(--color-mist); }
+.deep-dive h4 { margin: 2px 0 6px; font-family: var(--font-heading); font-size: 1.0625rem; font-weight: 400; letter-spacing: -0.02em; line-height: 1.4; }
+.deep-dive .steps p { margin: 0; color: var(--color-steel); font-size: 15px; line-height: 1.65; }
+.deep-dive .steps p b { color: var(--color-graphite); font-weight: 600; }
+.table-wrap { margin: 8px 0 12px; overflow-x: auto; }
+.compare { width: 100%; border-collapse: collapse; background: var(--color-canvas-white); border-radius: 8px; font-size: 14px; }
+.compare th, .compare td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--color-mist); white-space: nowrap; }
+.compare thead th { color: var(--color-slate); font-size: 12px; font-weight: 500; }
+.compare tbody th { font-weight: 500; }
+.compare tr:last-child > * { border-bottom: 0; }
+.compare .chosen td:last-child, .compare .chosen th { text-decoration: underline; text-decoration-color: var(--color-ember-orange); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.limit-note { margin: 4px 0 0; padding: 14px 16px; border-radius: 8px; background: var(--color-canvas-white); color: var(--color-steel); font-size: 14px; line-height: 1.6; }
+.limit-note strong { margin-right: 10px; color: var(--color-brass); font-weight: 600; }
+
+.deep-dive code { padding: 1px 6px; border-radius: 4px; background: var(--color-canvas-white); color: var(--color-graphite); font-family: Consolas, "SFMono-Regular", monospace; font-size: .88em; word-break: break-all; }
+/* 섹션 소제목: 단어 중간(예: "정리했/습니다.")에서 줄이 바뀌지 않게 */
+.section-heading > p { word-break: keep-all; }
