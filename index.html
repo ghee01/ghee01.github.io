@@ -123,7 +123,7 @@
 
       <div class="project-grid">
         <article class="project-card compact">
-          <figure class="project-visual shot dash">
+          <figure class="project-visual shot std">
           <img src="images/project-2.png" alt="화재 인명피해 예측 대시보드: 재현율 85.2%, ROC-AUC 0.770, 정밀도 7.5%와 변수 그룹별 중요도 막대 그래프(발화요인 약 0.38, 장소대분류 약 0.20)" width="1161" height="597" loading="lazy">
         </figure>
         <div class="project-copy">
@@ -163,22 +163,17 @@
         </article>
 
         <article class="project-card compact">
-          <div class="visual-stack">
-            <figure class="project-visual shot list">
-              <img src="images/project-3-1.png" alt="냉장고 식재료 목록 화면: 이름 검색, 카테고리·보관 방법 필터와 총 100개·5페이지로 나뉜 식재료 표" width="1525" height="810" loading="lazy">
-            </figure>
-            <figure class="project-visual shot csv">
-              <img src="images/project-3-2.png" alt="CSV 파일 업로드 화면: CSV 컬럼명 안내, 날짜 형식(8/25, 9/1, 12/31) 안내와 파일 업로드 칸" width="1480" height="722" loading="lazy">
-            </figure>
-          </div>
+          <figure class="project-visual shot list">
+            <img src="images/project-3-1.png" alt="냉장고 식재료 목록 화면: 이름 검색, 카테고리·보관 방법 필터와 총 100개·5페이지로 나뉜 식재료 표" width="1525" height="810" loading="lazy">
+          </figure>
         <div class="project-copy">
             <div class="project-number">03 · BACKEND</div>
             <h3><a href="https://github.com/ghee01/Refrigerator_project.git" target="_blank" rel="noopener">냉장고 식재료 관리 API ↗</a></h3>
             <p class="project-lead">식재료 등록·검색·수정·삭제와 CSV 대량 등록, 유통기한 현황 대시보드를 제공하는 3인 팀 프로젝트입니다.</p>
             <ul class="impact-list">
-              <li><strong>문제</strong><span>CSV 대량 등록 때 일부 행이 오류 없이 건너뛰어지고, 날짜가 문자열(VARCHAR)로 저장됨</span></li>
+              <li><strong>문제</strong><span>CSV의 "8/7" 형식 날짜가 DATE로 변환되지 않아 구매일·유통기한 파싱이 모두 실패하고, DB 컬럼명 오타(stroage_method)로 UndefinedColumn 에러가 남</span></li>
               <li><strong>기여</strong><span>Router 구조화, 요청/응답 스키마 분리, CRUD·검색·페이지네이션·예외 처리, PATCH 부분 수정 검증</span></li>
-              <li><strong>결과</strong><span>날짜를 DATE 타입으로 바꾸고 공통 parse_date()로 통일, 행 누락 버그는 원인까지 추적해 수정하고 TROUBLESHOOTING 문서로 정리</span></li>
+              <li><strong>결과</strong><span>월/일 문자열을 변환하는 공통 parse_date()로 두 컬럼을 통일해 DATE 타입을 유지하고, 컬럼명 오타는 DB를 재생성·재적재해 수정, 과정을 TROUBLESHOOTING 문서로 정리</span></li>
             </ul>
             <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" width="16" height="16" onerror="this.remove()">SQLAlchemy</span><span><img src="https://cdn.simpleicons.org/pydantic" alt="" width="16" height="16" onerror="this.remove()">Pydantic</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span></div>
             <div class="project-links"><a class="repo-link" href="https://github.com/ghee01/Refrigerator_project.git" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/808080" alt="" width="14" height="14" onerror="this.remove()">GitHub 레포 보기 →</a></div>
