@@ -30,7 +30,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Data Backend · Python / FastAPI</p>
         <h1 id="hero-title"><span class="hero-line plain">데이터를 정리하고,</span><br><span class="hero-line">API로 연결합니다.</span></h1>
-        <p class="hero-summary">Python으로 데이터를 정리하고 FastAPI와 PostgreSQL로 API를 만들고 있습니다. 팀 프로젝트에서는 백엔드 구현과 모델 검증을 주로 맡았습니다.</p>
+        <p class="hero-summary">Python으로 데이터를 정리하고 FastAPI와 PostgreSQL로 API를 만들고 있습니다. 팀 프로젝트에서는 백엔드 구현과 모델 검증을 주로 맡았고, 개인 확장으로 LangGraph 기반 재고 조회 Agent도 만들었습니다.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">대표 프로젝트 보기</a>
         </div>
@@ -40,7 +40,7 @@
         <p class="snapshot-label">프로필 요약</p>
         <dl>
           <div><dt>관심 직무</dt><dd>백엔드 개발</dd></div>
-          <div><dt>주요 기술</dt><dd>Python · FastAPI · PostgreSQL · Docker</dd></div>
+          <div><dt>주요 기술</dt><dd>Python · FastAPI · PostgreSQL · Docker · LangGraph</dd></div>
           <div><dt>대표 경험</dt><dd>팀 프로젝트 3건</dd></div>
           <div><dt>강점</dt><dd>원인 추적 · 데이터 처리</dd></div>
           <div><dt>자격</dt><dd>정보처리기사 보유 · 빅데이터분석기사 준비 중</dd></div>
@@ -78,13 +78,14 @@
         <div class="project-copy">
           <div class="project-number">01 · BACKEND + ML</div>
           <h3><a href="https://github.com/ghee01/b2b_inventory_api.git" target="_blank" rel="noopener">B2B 재고·매출·거래처 관리 API ↗</a></h3>
-          <p class="project-lead">기업의 상품·거래처·주문·재고를 관리하는 FastAPI 기반 B2B API로, 주문 CSV 일괄 적재, 상품별 주간 수요예측, 그리고 그 예측을 활용한 추천 발주량·예상 품절일 계산 기능을 갖춘 팀 프로젝트입니다.</p>
+          <p class="project-lead">기업의 상품·거래처·주문·재고를 관리하는 FastAPI 기반 B2B API로, 주문 CSV 일괄 적재, 상품별 주간 수요예측, 그리고 그 예측을 활용한 추천 발주량·예상 품절일 계산 기능을 갖춘 팀 프로젝트입니다. 완성 후 개인 확장으로, 이 API를 도구로 호출해 재고·수요·발주 질문에 답하는 LangGraph Agent를 추가했습니다.</p>
           <ul class="impact-list">
             <li><strong>문제</strong><span>과거 거래 데이터를 한 번에 적재할 방법이 없었고, 주문이 드문 상품은 예측 오차가 판매량 수준으로 커짐</span></li>
-            <li><strong>기여</strong><span>CSV 일괄 적재(행 검증·트랜잭션), 더미 주문 생성기, 수요예측 API, 모델·기준값 검증 노트북</span></li>
+            <li><strong>기여</strong><span>CSV 일괄 적재(행 검증·트랜잭션), 더미 주문 생성기, 수요예측 API, 모델·기준값 검증 노트북, Agent 개인 확장(아래)</span></li>
             <li><strong>결과</strong><span>상품별 랜덤포레스트가 3개 구간 모두 최저 오차(WAPE 0.339~0.374), 4주 평균 대비 1~14% 개선(구간이 길수록 격차는 줄어듦)</span></li>
+            <li><strong>Agent</strong><span>API를 도구 4개로 연결한 조회 전용 LangGraph Agent. 실제 모델로 점검 시나리오 3개를 돌려 답변 문제를 찾고 프롬프트·도구를 3라운드에 걸쳐 수정</span></li>
           </ul>
-          <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" onerror="this.remove()">Python</span><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span></div>
+          <div class="tags" aria-label="사용 기술"><span><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" onerror="this.remove()">Python</span><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span><span><img src="https://cdn.simpleicons.org/langchain" alt="" width="16" height="16" onerror="this.remove()">LangGraph</span><span><img src="https://cdn.simpleicons.org/googlegemini" alt="" width="16" height="16" onerror="this.remove()">Gemini API</span></div>
           <div class="project-links"><a class="repo-link" href="https://github.com/ghee01/b2b_inventory_api.git" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/808080" alt="" width="14" height="14" onerror="this.remove()">GitHub 레포 보기 →</a></div>
           <details class="deep-dive">
             <summary>해결 과정 자세히 보기</summary>
@@ -116,6 +117,28 @@
               </li>
             </ol>
             <p class="limit-note"><strong>한계</strong>상품 12개의 더미 데이터로 확인한 기준이라 실제 데이터에서는 달라질 수 있습니다. README에도 적어 두었습니다.</p>
+          </details>
+          <details class="deep-dive">
+            <summary>Agent 점검 과정 자세히 보기</summary>
+            <ol class="steps">
+              <li>
+                <h4>조회 전용, 도구 4개로 시작</h4>
+                <p>상품 검색·재고·수요예측·발주 추천 API를 각각 도구로 만들고, <b>필요한 값만 추려서</b> LLM에 넘깁니다. 주문 생성이나 재고 조정 같은 쓰기 기능은 일부러 뺐습니다. 흐름은 계획(planner) → 도구 선택(agent) ↔ 도구 실행(tools)이고, 호출 횟수가 한도를 넘으면 멈춥니다.</p>
+              </li>
+              <li>
+                <h4>근거 없는 표현을 프롬프트 규칙으로 막음</h4>
+                <p>답변에 시스템에 없는 “메뉴” 안내가 나오고, 주문이 드물어 제외된 상품을 “이력 부족”이라고 잘못 설명했습니다. <b>오류 코드별로 설명을 구분하는 규칙</b>을 넣고, 확인하지 않은 상품은 “미확인”으로 표시하게 했습니다.</p>
+              </li>
+              <li>
+                <h4>“수요가 늘었다” 판단은 코드로 이동</h4>
+                <p>모델이 평균을 직접 계산해 “수요 높음”이라고 단정하는 문제가 있었습니다. 최근 4주 평균 대비 예측 증가율(<code>change_pct</code>)을 <b>도구가 계산</b>하게 하고, +20% 이상일 때만 증가라고 말하게 했습니다. 예측 오차(WAPE)가 0.4 이상이면 “참고용”을 함께 표시합니다.</p>
+              </li>
+              <li>
+                <h4>도구 결과가 0건이면 멈추는 문제</h4>
+                <p>“재고 부족한데 수요도 많은 상품”을 물었더니 재주문점 이하 재고가 0건이라는 결과만 보고 답이 끝났습니다. <b>재주문점 이하</b>와 <b>수요 대비 품절 임박</b> 두 기준을 구분하고, 한 도구가 0건이어도 나머지를 확인하도록 규칙을 추가했습니다.</p>
+              </li>
+            </ol>
+            <p class="limit-note"><strong>한계</strong>LLM의 도구 선택은 실행마다 달라질 수 있어 시나리오 3개로만 점검했고, 무료 등급이라 호출 한도가 작습니다. 테스트(8개)는 가짜 API와 가짜 LLM으로 도구 가공과 그래프 연결만 확인합니다.</p>
           </details>
         </div>
       </article>
@@ -210,7 +233,7 @@
       </div>
       <div class="skill-groups">
         <article class="skill-group"><h3>백엔드 · 데이터베이스</h3><div class="tags" aria-label="백엔드 · 데이터베이스 기술"><span><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" onerror="this.remove()">Python</span><span><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" onerror="this.remove()">FastAPI</span><span><img src="https://cdn.simpleicons.org/pydantic" alt="" width="16" height="16" onerror="this.remove()">Pydantic</span><span><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" width="16" height="16" onerror="this.remove()">SQLAlchemy</span><span><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" onerror="this.remove()">PostgreSQL</span><span><img src="https://cdn.simpleicons.org/sqlite" alt="" width="16" height="16" onerror="this.remove()">SQLite</span><span><img src="https://cdn.simpleicons.org/swagger" alt="" width="16" height="16" onerror="this.remove()">Swagger UI</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>REST API, ORM 모델, 입력 검증, 예외 처리, 모델 서빙</p><p><span class="label">근거 프로젝트</span>냉장고 식재료 API · B2B 재고 API · 대출 심사 API(수업)</p></div></article>
-        <article class="skill-group"><h3>데이터 분석 · 모델링</h3><div class="tags" aria-label="데이터 분석 · 모델링 기술"><span><img src="https://cdn.simpleicons.org/pandas" alt="" width="16" height="16" onerror="this.remove()">Pandas</span><span><img src="https://cdn.simpleicons.org/numpy" alt="" width="16" height="16" onerror="this.remove()">NumPy</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span>XGBoost</span><span><img src="https://cdn.simpleicons.org/jupyter" alt="" width="16" height="16" onerror="this.remove()">Jupyter</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>전처리, 불균형 대응, 백테스트 비교, 대시보드, 데이터 드리프트 점검</p><p><span class="label">근거 프로젝트</span>화재 인명피해 예측 · B2B 수요예측 · 대출 심사 API(수업)</p></div></article>
+        <article class="skill-group"><h3>데이터 분석 · 모델링 · Agent</h3><div class="tags" aria-label="데이터 분석 · 모델링 · Agent 기술"><span><img src="https://cdn.simpleicons.org/pandas" alt="" width="16" height="16" onerror="this.remove()">Pandas</span><span><img src="https://cdn.simpleicons.org/numpy" alt="" width="16" height="16" onerror="this.remove()">NumPy</span><span><img src="https://cdn.simpleicons.org/scikitlearn" alt="" width="16" height="16" onerror="this.remove()">Scikit-learn</span><span>XGBoost</span><span><img src="https://cdn.simpleicons.org/jupyter" alt="" width="16" height="16" onerror="this.remove()">Jupyter</span><span><img src="https://cdn.simpleicons.org/streamlit" alt="" width="16" height="16" onerror="this.remove()">Streamlit</span><span><img src="https://cdn.simpleicons.org/langchain" alt="" width="16" height="16" onerror="this.remove()">LangGraph</span><span><img src="https://cdn.simpleicons.org/googlegemini" alt="" width="16" height="16" onerror="this.remove()">Gemini API</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>전처리, 불균형 대응, 백테스트 비교, 대시보드, 데이터 드리프트 점검, 도구 호출 Agent, 프롬프트 점검</p><p><span class="label">근거 프로젝트</span>화재 인명피해 예측 · B2B 수요예측·Agent(개인 확장) · 대출 심사 API(수업)</p></div></article>
         <article class="skill-group"><h3>테스트 · 배포 · 협업</h3><div class="tags" aria-label="테스트 · 배포 · 협업 기술"><span><img src="https://cdn.simpleicons.org/pytest" alt="" width="16" height="16" onerror="this.remove()">pytest</span><span><img src="https://cdn.simpleicons.org/ruff" alt="" width="16" height="16" onerror="this.remove()">Ruff</span><span><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" onerror="this.remove()">Docker</span><span><img src="https://cdn.simpleicons.org/githubactions" alt="" width="16" height="16" onerror="this.remove()">GitHub Actions</span><span><img src="https://cdn.simpleicons.org/git" alt="" width="16" height="16" onerror="this.remove()">Git</span><span><img src="https://cdn.simpleicons.org/github/808080" alt="" width="16" height="16" onerror="this.remove()">GitHub</span></div><div class="skill-notes"><p><span class="label">사용한 곳</span>API 테스트, 코드 린트, Docker 이미지·헬스체크, push 때 자동 검사(CI)</p><p><span class="label">근거 프로젝트</span>대출 심사 API(수업) · B2B 재고 API · 냉장고 프로젝트</p></div></article>
       </div>
     </section>
